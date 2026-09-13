@@ -53,7 +53,15 @@ const emailFilter = document.getElementById("emailFilter");
     emailCount.textContent =
         emails.length + " messages";
 }
+const currentUserEmail =
+    document.querySelector(".user-email")?.textContent.trim();
 
+if (currentUserEmail) {
+    localStorage.setItem(
+        "currentUserEmail",
+        currentUserEmail
+    );
+}
 const totalEmails =
     document.getElementById("totalEmails");
 
@@ -396,7 +404,7 @@ displayEmails(currentPage);
                      JSON.stringify(result)
                      );
 const currentUserEmail =
-    document.querySelector(".user-email")?.textContent.trim() || "guest";
+    localStorage.getItem("currentUserEmail") || "guest";
 
 const historyKey = "analysisHistory_" + currentUserEmail;
 
