@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Email Dashboard - Phishing Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-dashboard">
+
+    <div class="dashboard-container">
+
+        <!-- Header -->
+        <header class="dashboard-header">
+
+            <div>
+                <h1>🛡️ Phishing Detection Dashboard</h1>
+                <p>Select an email to analyze for phishing threats.</p>
+            </div>
+
+            <div class="user-section">
+
+    <div class="user-profile">
+
+        <div class="profile-circle">
+            {{ user.name[0] }}
+        </div>
+
+        <div class="user-info">
+            <div class="user-name">
+                {{ user.name }}
+                <span class="verified">✓</span>
+            </div>
+
+            <div class="user-email">
+                {{ user.email }}
+            </div>
+        </div>
+
+    </div>
+
+    <a href="/logout" class="logout-btn">
+        Logout
+    </a>
+
+</div>
+
+        </header>
+
+
+        <!-- Email Section -->
+        <main class="email-section">
+
+            <div class="dashboard-summary">
+
+    <div class="summary-card">
+        <h3>Total Emails</h3>
+        <p id="totalEmails">0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>Analyzed</h3>
+        <p id="analyzedEmails">0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>Safe</h3>
+        <p id="safeEmails">0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>Suspicious</h3>
+        <p id="suspiciousEmails">0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>Phishing</h3>
+        <p id="phishingEmails">0</p>
+    </div>
+
+</div>
+
+            <div class="section-header">
+                <h2>Your Emails</h2>
+               <span id="emailCount">Loading...</span>
+            </div>
+<div class="email-tools">
+
+    <input
+        type="text"
+        id="emailSearch"
+        placeholder="Search emails..."
+    >
+
+    <select id="emailFilter">
+        <option value="all">All Emails</option>
+        <option value="unread">Unread</option>
+    </select>
+
+</div>
+
+            <!-- Emails will be loaded here -->
+            <div id="emailList">
+
+                <p>Loading emails...</p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

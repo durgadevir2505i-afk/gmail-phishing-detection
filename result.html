@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analysis Result - Phishing Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-result">
+
+    <div class="result-container">
+
+        <div class="result-card">
+
+            <div id="statusIcon" class="status-icon">
+                ✓
+            </div>
+
+            <h1 id="statusLabel">
+                Analysis Result
+            </h1>
+
+            <p id="statusSub">
+                Email analysis completed.
+            </p>
+
+
+            <div class="result-section">
+
+                <div class="result-row">
+                    <strong>Risk Level</strong>
+
+                    <span id="riskValue">
+                        Low (0/100)
+                    </span>
+                </div>
+
+
+                <div class="risk-bar-container">
+
+                    <div
+                        id="riskBar"
+                        class="risk-bar">
+                    </div>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <strong>Confidence</strong>
+
+                    <span id="confidenceValue">
+                        0%
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="indicators-section">
+
+                <h2>Phishing Indicators</h2>
+
+                <ul id="indicatorsList">
+                    <li>
+                        No analysis available.
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="result-actions">
+
+                <a
+                    href="/dashboard"
+                    class="btn-primary">
+                    Back to Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

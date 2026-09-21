@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Email Analysis - Phishing Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-analysis">
+
+    <div class="analysis-container">
+
+        <div class="analysis-card">
+
+            <div class="analysis-header">
+
+                <div class="shield-icon">🛡️</div>
+
+                <h1>Email Analysis</h1>
+
+                <p>AI-powered phishing threat analysis</p>
+
+            </div>
+
+
+            <div class="email-details">
+
+                <div class="detail-row">
+                    <strong>From:</strong>
+                    <span>security-alert@example.com</span>
+                </div>
+
+                <div class="detail-row">
+                    <strong>Subject:</strong>
+                    <span>Important Security Alert</span>
+                </div>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <strong>Email Content</strong>
+
+                <p>
+                    We noticed unusual activity on your account.
+                    Please verify your account immediately to avoid
+                    account suspension.
+                </p>
+
+                <p>
+                    Click the link below to verify your account.
+                </p>
+
+            </div>
+
+
+            <div class="analysis-action">
+
+                <button id="analyzeBtn" class="btn-primary">
+                    Analyze Email
+                </button>
+
+                <p id="analyzingNote" hidden>
+                    🔍 Analyzing email...
+                </p>
+
+            </div>
+
+
+            <div class="back-section">
+
+                <a href="/dashboard"></a>
+                    ← Back to Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
