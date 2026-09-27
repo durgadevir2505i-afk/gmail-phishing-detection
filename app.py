@@ -405,7 +405,9 @@ def gmail_total_exact():
             "details": str(e)
         }), 500
 
-
+@app.route("/privacy")
+def privacy():
+    return render_template("privacy.html")
 
 
 @app.route("/dashboard")
